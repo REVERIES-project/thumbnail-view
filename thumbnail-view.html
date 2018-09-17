@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`thumbnail-view`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="thumbnail-view">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'thumbnail-view',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'thumbnail-view',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
