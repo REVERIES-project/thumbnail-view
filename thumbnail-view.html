@@ -6,6 +6,12 @@ This code may only be used under the "Do whatever you want with code license"
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../iron-image/iron-image.html">
 <link rel="import" href="../simple-modal/simple-modal.html">
+<!--
+This component is used for mcq questions based on image selection
+@demo demo/index.html
+@author Gicquel
+-->
+
 <dom-module id="thumbnail-view">
     <template>
         <style>
@@ -21,7 +27,6 @@ This code may only be used under the "Do whatever you want with code license"
              <iron-image style="width:500px;height:500px" src=[[thumbnailPath]] sizing="contain"></iron-image>
         </simple-modal>
         <iron-image src=[[thumbnailPath]] on-click="showImageModal" class="thumbnail" sizing="contain"></iron-image>
-
     </template>
     <script>
     Polymer({
